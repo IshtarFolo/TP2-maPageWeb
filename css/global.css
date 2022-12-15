@@ -1,0 +1,751 @@
+*{
+    margin: 0;
+}
+
+/*/////////////////////////////////////Police(s) externes/////////////////////////////////////////////////////////*/
+@font-face{
+    font-family: webster;
+    src: url("../polices/WEBSTER_.TTF");
+}
+
+/*//////////////////////////////////////////////////Conteneur global du site//////////////////////////////////////////////*/
+body{
+    box-sizing: border-box;
+    min-width: 1366px;
+    min-height: 768px;
+    overflow-x: hidden;
+}
+
+/*/////////////////////////////////////////////////////////Entête///////////////////////////////////////////////////////////////////*/
+header{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    background-image: url("../images/laBarqueDeDante.jpg"); /*La Barque de Dante, Delacroix*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*///////////////////////////////////Chaques sections de la page doit prendre tout l'espace visible//////////////////////////////////*/
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*///////////////////////////////////////////Titre pour chaque section du site/////////////////////////////////////////////////*/
+h1{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 30px;
+    padding-left: 18%;
+    font-size: 25px;
+    color: white;
+    font-family: webster;
+}
+
+header>h2:nth-of-type(1){
+    display: block;
+    width: 400px;
+    height: 50px;
+    font-size: 200%;
+    font-family: "Webster";
+    color: white;
+    padding-top: 0.5%;
+    margin-left: 50%;
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+}
+
+h2{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 30px;
+    padding-left: 18%;
+    color: white;
+    font-family: webster;
+}
+
+/*////////////////////////////////////////////Présentation du TP sur la page d'acceuil//////////////////////////////////////////////////////*/
+h3{
+    display: block;
+    width: 400px;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding-top: 0.5%;
+    margin-left: 68%;
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+}
+
+/*Premier Titre, soit le titre de mon travail final*/
+h2:nth-of-type(1){
+    font-size: 40px;
+    font-family: webster;
+}
+
+/*Mon adresse Github dans l'entête, comme demandé dans le document sur le TP2*/
+header>h4>a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    justify-content: flex-end;
+    margin-top: 110%;
+    margin-left: 0;
+}
+
+/*Lorsqu'on passe la souris sur le liens il devient souligné pour mettre de l'avant qu'il s'agit d'un liens sur lequel on peut cliquer*/
+header>h4>a:hover{
+    text-decoration: underline;
+}
+
+/*///////////////////////////////////////////////////Barre de navigation pour le menu/////////////////////////////////////////////*/
+nav ul{
+    position: fixed;
+    background-color: black;
+    font-size: 150%;
+    width: 15%;
+    height: 100%;
+    min-height: 900px;
+    padding-top: 7%;
+    flex-direction: column;
+}
+
+ul{
+    padding-left: 0;
+}
+
+/*options dans le menu*/
+ul li a{
+    display: flex;
+    color: white;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    font-size: 60%;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    transition-duration: 1s;
+    text-decoration: none;
+}
+
+/*Changement d'état du menu lorsqu'on passe la souris sur les différents éléments*/
+ul li>a:hover{
+    color: black;
+    transform: scale(1, 1);
+    background-color: white;
+}
+
+/*/////////////////////////////////////////Deuxième section: inscription//////////////////////////////////////////////////////////*/
+.inscription{
+    background-color: black;
+    min-height: 1000px;
+}
+
+/*pour empècher le titre de la section de s'écrire sur deux lignes*/
+#inscription{
+    width: 500px;
+    font-size: 25px;
+}
+
+/*Ensemble du formulaire*/
+form{
+    min-height: 1000px;
+}
+
+/*fieldset pour les cases à remplir et leur description*/
+.colonne{
+    display: flex;
+    width: 20%;
+    height: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    min-width: 5%;
+    margin-left: 40%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: 10px double white;
+    color: white;
+    font-size: 160%;
+    background-image: url("../images/goya-\ SaturneDévorantUnDeSesFils.jpg"); /*Saturne Dévorant un de ses fils, Goya*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*boîte de remplissage âge*/
+.colonne>label:nth-last-of-type(3){
+    width: 50%;
+    margin-right: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*boîte de remplissage téléphone*/
+.colonne>label:nth-of-type(5){
+    display: flex;
+    flex-direction: column;
+    margin-right: 1%;
+}
+
+/*Pour aligner la section des boutons radios et lui donner ses dimensions*/
+.colonne2{
+    width: 119%;
+    margin-right: 0%;
+    align-self: flex-end;
+    margin-top: 5%;
+    font-size: 100%;
+    border: 10px double white;
+}
+
+/*Positionnement des boutons radios et du texte descriptif de la section "recevoir des nouvelles"*/
+.colonne2>label{
+    width: 45%;
+    display: inline-flex;
+    margin-right: 2%;
+}
+
+/*Boutons pour soumission ou effacer le formulaire*/
+.soumission{
+    display: flex;
+    width: 124%;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 0%;
+    justify-content: space-around;
+    border: 10px double white;
+}
+
+/*Pour styliser les boutons radios*/
+input[type=radio]{
+    width: 20%;
+    height: 20px;
+}
+
+/*Style du bouton pour vider le formulaire*/
+input[type=reset]{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Style du bouton pour envoyer le formulaire*/
+input[type=submit]{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Espacement entre les différents champs à remplir*/
+label{
+    padding-top: 20px;
+}
+
+/*//////////////////////////////////////Troisième section: Tableau/////////////////////////////////////////////*/
+section:nth-of-type(2){
+    background-color: black;
+    background-image: url("../images/leTriompheDeLaMort.jpg"); /*Le triomphe de la mort, Brueghel l'Ancien*/
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#tableau{
+    font-size: 25px;
+}
+
+/*Ensemble du tableau*/
+table{
+    border: 2px solid black;
+    width: 60%;
+    height: 500px;
+    margin-left: 25%;
+    margin-top: 2%;
+    border: 2px solid white;
+}
+
+/*haut du tableau et son texte*/
+thead>tr>th{
+    border: 2px solid black;
+}
+
+/*La section des jours de la semaine*/
+thead>tr>th{
+    background-image: linear-gradient(purple, black);
+    border: 2px solid white;
+}
+
+/*background du tableau en noir*/
+table{
+    background-color: black;
+}
+
+/*La section des heures du tableau*/
+tbody>tr>th{
+    background-image: linear-gradient(purple, black);
+}
+
+/*séparations entre les cellules de la partie tbody du tableau*/
+tbody>tr>th[scope="row"]{
+    border: 2px solid white;
+}
+
+/*cellules*/
+th, td{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Texte descriptif en haut du tableau*/
+caption{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Commentaire au bas du tableau*/
+tfoot>tr>td{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px solid white;
+    background-image: linear-gradient(purple, black);
+}
+
+/*Style pour les cellules remplies*/
+td[class]{
+    background-image: linear-gradient(darkred, black);
+}
+
+/*Placer le texte descriptif des cellules pour qu'il n'élargisse pas trop les cellules*/
+td span{
+    display: block;
+}
+
+/*durée de transition lorsque l'utilisateur passe la souris sur les cellules remplies*/
+tbody>th, td{
+    transition-duration: 2s;
+}
+
+/*effets actifs lorsqu'on passe la souris sur les cellules remplies*/
+tbody>th,td[class]:hover{
+    transform: scale(1.5, 1.5);
+    border: 5px solid white;
+}
+
+/*///////////////////////////////////////////////////Quatrième section: Articles/////////////////////////////////////////////////////////////*/
+/*Titre principale de la section*/
+#article{
+    padding-left: 18%;
+    font-size: 25px;
+    height: 50px;
+}
+
+/*Calibrage de la section en flex*/
+section:nth-of-type(3){
+    background-color: black;
+}
+
+/*Titre de mon article*/
+.titreArticle{
+    display: flex;
+    width: 800px;
+    font-size: 23px;
+    margin-left: 10%;
+    text-align: left;
+    margin-right: 0;
+    text-decoration: underline;
+}
+
+/*Div pour placer les éléments flex*/
+.positionnement{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+/*Premier paragraphe*/
+article:nth-of-type(1){
+    width: 20%;
+    margin-left: 15%;
+    color: white;
+    margin-top: 3%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*Deuxième paragraphe*/
+article:nth-of-type(2){
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 3%;
+    align-self: flex-start;
+    color: white;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   text-align: justify;
+}
+
+/*Troisième paragraphe*/
+article:nth-of-type(3){
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 3%;
+    align-self: flex-start;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+/*soustitre obligatoire pour les paragraphes*/
+article>.soustitre{
+    margin-left: 0;
+    color: red;
+    height: 22px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Images à côté du texte*/
+.positionnement>article>figure:nth-of-type(1){
+    width: 50%;
+    border: none;
+    float: right;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+/*Description des images*/
+.positionnement>article>figure:nth-of-type(1)>figcaption{
+    font-size: 12px;
+    padding-left: 2%;
+    border: 1px solid rgb(110, 80, 80);
+}
+
+/*///////////////////////////////////////////////////////Cinquième section: Vidéos//////////////////////////////////////////////////////////////////*/
+section:nth-of-type(4){
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*Titre h1 de la section vidéo*/
+#video{
+    width: 100px;
+    height: 50px;
+    padding-left: 20%;
+    padding-top: 1%;
+    font-size: 25px;
+}
+
+/*Div de la section vidéo*/
+.youtube{
+    width: 90%;
+    display: flex;
+    margin-left: 0;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+/*Vidéo Elden Ring*/
+figure:nth-of-type(1){
+    width: 34.5%;
+    height: 70%;
+    min-width: 20%;
+    margin-right: 0;
+    margin-left: 20%;
+    margin-bottom: 0;
+    border: 2px solid white;
+}
+
+/*Vidéo Flatliners*/
+figure:nth-of-type(2){
+    width: 34.5%;
+    height: 70%;
+    min-width: 20%;
+    border: 2px solid white;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/*Vidéo Shawn James, The curse of the fold*/
+figure:nth-of-type(3){
+    width: 34.5%;
+    height: 70%;
+    min-width: 20%;
+    margin-left: 20%;
+    margin-right: 0;
+    margin-top: 0;
+    border: 2px solid white;
+}
+
+/*Vidéo Owlkitty, Top Gun with a cat*/
+figure:nth-of-type(4){
+    width: 34.5%;
+    min-width: 20%;
+    height: 70%;
+    margin-left: 0;
+    margin-top: 0;
+    border: 2px solid white;
+}
+
+/*Texte sous les vidéos*/
+figure>span{
+    color: white;
+    font-size: 12px;
+    margin-left: 2%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*les vidéos youtube*/
+iframe{
+    width: 100%;
+    height: 80%;
+    border: none;
+}
+
+/*////////////////////////////////////////////////Sixième section: Gallerie d'images////////////////////////////////////////////////////////////*/
+section:nth-of-type(5){
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*Titre de la section gallerie d'images, pour ne pas qu'il s'écrive sur deux lignes*/
+#images{
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+}
+
+/*div qui englobe toutes les autres div (AKA colonne_no...)*/
+.rangee{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Pour le placement du texte dans les span de la section galerie*/
+.colonne_no1, .colonne_no2, .colonne_no3, .colonne_no4, .colonne_no5, span{
+    color: white;
+    padding-top: 2%;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+/*div Le Caravage à Brueghel L'ancien*/
+.colonne_no1{
+    flex: 20%;
+    width: 50px;
+    height: 100px;
+    max-width: 20%;
+    padding: 0 4px;
+    margin-left: 16%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/*div Géricault à Fussli*/
+.colonne_no2{
+    flex: 25%;
+    width: 50px;
+    height: 100px;
+    max-width: 20%;
+    vertical-align: middle;
+    padding: 0 5px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/*div Lauren Marx à David*/
+.colonne_no3{
+    flex: 25%;
+    width: 50px;
+    height: 100px;
+    max-width: 10%;
+    vertical-align: middle;
+    padding: 0 5px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/* div John baizley à Picasso*/
+.colonne_no4{
+    flex: 25%;
+    width: 50px;
+    height: 100px;
+    max-width: 10%;
+    vertical-align: middle;
+    padding: 0 5px;
+    margin-left: 67.5%;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/* div Escher à De La Tour*/
+.colonne_no5{
+    flex: 25%;
+    width: 50px;
+    height: 100px;
+    max-width: 10%;
+    vertical-align: middle;
+    padding: 0 5px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/*Les Images*/
+img{
+    width: 100%;
+    margin-top: 2%;
+    vertical-align: middle;
+    transition: 1s;
+}
+
+/*Effets de transition lorsqu'on passe la souris sur les images*/
+#galerie img:hover{
+    transform: scale(2);
+}
+
+/*///////////////////////////////////////////////////////////Pied de page(Footer)///////////////////////////////////////////////////////////////////////*/
+footer{
+    background-color: black;
+    width: 100vw;
+    height: 30vh;
+    margin-right: 0;
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+    border-top: 5px double white;
+    overflow: hidden;
+}
+
+/*Le texte de bas de page, adresse du collège*/
+p:nth-of-type(3){
+    width: 350px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(5px, 100%, 10px);
+    color: white;
+    margin-left: 17%;
+    align-self: flex-start; 
+    flex-wrap: nowrap;
+    justify-content: flex-end;   
+    margin-top: 2.5%;
+}
+
+/*Nom du programme*/
+p:nth-of-type(4){
+    width: 250px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(5px, 100%, 10px);
+    color: white;
+    margin-left: 17%;
+    align-self: flex-start;
+}
+
+/*Avis de confidentialité*/
+p:nth-of-type(5){
+    width: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(5px, 100%, 10px);
+    color: white;
+    margin-left: 17%;
+    align-self: flex-start;
+}
+
+/*Titre liens importants*/
+h4{
+    width: 300px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 17%;
+    margin-top: 2%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Texte des liens importants*/
+p:nth-of-type(1){
+    font-size: 12px;
+    width: 500px;
+    margin-left: 12.6%;
+    align-self: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p:nth-of-type(2){
+    width: 400px;
+    font-size: 12px;
+    margin-left: 13.5%;
+    align-self: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 1s;
+}
+
+p:nth-of-type(1):hover{
+    text-decoration: underline;
+}
+
+/*Style des liens importants*/
+p>a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 17%;
+    align-self: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Effets lorsqu'on survole les liens importants*/
+p:nth-of-type(2):hover{
+    text-decoration: underline;
+}
+
+/*div pour positionner les icones*/
+footer>.icones{
+    filter: invert(100%);
+    width: 15%;
+    margin-left: 20%;
+}
+
+/*Taille et marge des icônes*/
+.icones>img{
+    width: 10%;
+    padding-right: 5%;
+}
+
+/*Validation W3C css*/
+.icones>p{
+    margin-left: 0;
+    width: 320px;
+}

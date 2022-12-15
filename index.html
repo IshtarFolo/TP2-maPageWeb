@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang= "fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>TP2: Ma page Web par Xavier Arbour</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/global.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Xavier">
+        <meta name="robots" content="noindex">
+    </head>
+
+
+    <body>
+        <!--Menu-->
+            <nav>
+                <ul>
+                    <li><a href="#acceuil">Acceuil</a></li>
+                    <li><a href="#inscription">Inscription</a></li>
+                    <li><a href="#tableau">Tableau</a></li>
+                    <li><a href="#article">Articles</a></li>
+                    <li><a href="#video">Vidéo</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#piedDePage">Pied de page</a></li>
+                </ul>
+            </nav>
+
+        <!--Acceuil-->
+            <header>
+                    <h1 id="acceuil">Acceuil</h1>
+                    <h2>Mon TP Final</h2>
+                    <h3>présenté par: Xavier Arbour</h3>
+                    <h3>582-1W1 - Mise en page web</h3>
+                    <h3>Techniques d'intégration multimédia</h3>
+                    <h3>Collège de Maisonneuve</h3>
+                    <h3>Automne 2022</h3>
+            </header>
+
+            <!--Section Inscription-->
+                <section class = "inscription">
+                    <h2 id="inscription">Inscris-toi!</h2>
+
+                    <!--Remplissage de la partie "action" obligatoire pour certification htlm5 par validatorw3.org-->
+                        <form action="action">
+                                <fieldset class="colonne">
+                                    <legend>Pour t'abonner</legend>
+                                        <label>Nom: <input type="text"></label>
+                                        <label>Prénom: <input type="text"></label>
+                                        <label>Courriel: <input type="email"></label>
+                                        <label>Âge: <input type="number" min="0" max="100"></label>
+                                        <label>Tel.: <input type="text"></label>
+                                        <label>Mot de passe: <input type="password"></label>
+                               
+                                <fieldset class="colonne2">
+                                    <legend>
+                                        Pour recevoir des nouvelles
+                                    </legend>
+                                        <label><input type="radio" name="vote"><span></span> Je m'inscris!</label>
+                                        <label><input type="radio" name="vote"><span></span> Non merci!</label>
+                                </fieldset>
+
+                                <fieldset class="soumission">
+                                    <input type="reset" value="Vider">
+                                    <input type="submit" value="Envoyer">
+                                </fieldset>
+                            </fieldset>
+                        </form>
+                </section>
+
+                <!--Section Tableau-->
+                <section>
+                    <h2 id="tableau">Tableau</h2>
+                        <div class="global">
+                            <table>
+                                <caption>
+                                    <details>
+                                        <summary>
+                                            Mon Horaire pour la session d'automne 
+                                        </summary>
+                                        2022
+                                    </details>
+                                </caption>
+                                
+                                <thead>
+                                    <tr>
+                                       <th scope="col">Heure:</th>
+                                       <th scope="col">Lundi</th>
+                                       <th scope="col">Mardi</th>
+                                       <th scope="col">Mercredi</th>
+                                       <th scope="col">Jeudi</th>
+                                       <th scope="col">Vendredi</th>
+                                    </tr>
+                                </thead>
+                                        
+                                <tbody>
+                                   <tr>
+                                      <th scope="row">8h10</th>
+                                      <td class="plein" rowspan="3"><span>Mises en page web</span> 582-1W1-MA</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="plein" rowspan="3"><span>création vidéo</span>582-1M1-MA</td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">9h10</th>
+                                      <td class="plein" rowspan="3"><span>conception graphique</span><span>et imagerie matricielle</span> 582-1M2-MA</td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">10h10</th>
+                                      <td class="plein" rowspan="3"><span>Animation et</span><span>interaction en jeu</span>582-1J1-MA</td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">11h10</th>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">12h10</th>
+                                      <td class="plein" rowspan="3"><span>Animation et</span><span>interaction en jeu</span>582-1J1-MA</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="plein" rowspan="2"><span>conception graphique</span><span>et imagerie matricielle</span>582-1M2-MA</td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">13h10</th>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">14h10</th>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="plein"><span>Mises en page web</span>582-1W1-MA</td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">15h10</th>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>	
+                                   <tr>
+                                      <th scope="row">16h10</th>
+                                      <td></td>
+                                      <td class="plein" rowspan="3"><span>Animation et</span><span>interaction en jeu</span>582-1M1-MA</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">17h10</th>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <th scope="row">18h10</th>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="6">Données en date du 8 décembre 2022</td>
+                                        </tr>
+                                    </tfoot>
+                        </table>
+                            
+                        </div>
+                </section>
+
+                <!--Section pour les articles-->
+                <section>
+                    <h2 id="article">Articles</h2>
+                   
+                    <h3 class="titreArticle">Raisons de mes choix esthétiques et de mes inspirations pour ce site web</h3>
+
+                    <div class="positionnement">
+                        <!--Création d'une marge à l'aide de "&nbsp"-->
+                        <article><h4 class="soustitre">Dans</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            mon site web, j'ai tenté de représenter mes intérêt et mon parcours d'étude tout en gardant une mise en page relativement sobre.
+                            <figure>
+                                <img src="images/jeromeBosch.jpg" alt="Bosch">
+                                <figcaption>Jérome Bosch-Christ in Limbo</figcaption>
+                            </figure>
+                            Ayant étudié l'histoire de l'art ainsi que le cinéma j'ai accumulé bien des images et vidéos qui m'inspiraient particulièrement ou qui m'amusaient. On peut donc voir plusieurs oeuvres d'art variant des styles caravagesques, cubistes ou encore d'art nouveau revisité par des artistes plus contemporains tels que <i>Lauren Marx</i> et <i>John Baizley</i>.
+                            La musique est également un grand centre d'intérêt pour moi c'est pourquoi j'ai donc tenté d'inclure certains vidéos d'artistes que j'apprécie, or il se trouve que, certains d'entre-eux, n'authorisent pas l'utilisation de leur contenu Youtube à l'extérieur du site.</article>
+                        
+                            <!--Création d'une marge à l'aide de "&nbsp"-->
+                        <article><h4 class="soustitre">C'est</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            donc avec regret que j'ai dû abandonner le projet d'inclure des vidéoclip de Tool qui sont, soit dit en passant, visuellement et cinématographiquement parlant particulièrement bien réalisés.
+                            Par ailleurs, le choix du style visuel général de mon site et celui des oeuvres fait également échoe au style de jeux vidéos qui m'intéresse, soit principalement la séries des <i>SoulsBorne</i> de chez <i>FromSoftware</i> qui puisent dans le style <i>dark fantasy</i> et me rappellent souvent les travaux d'artistes tels que Beskinski ou encore des univers apocalyptiques de <i>Jérôme Bôsch</i>.
+                            <figure>
+                                <img src="images/zdzisławBeksiński.jpg" alt="Beskinski">
+                                <figcaption>zdzisław Beksiński-Unknown</figcaption>
+                            </figure>
+                            Style qui se veullent généralement sombres et arides, on retrouve aussi des thèmes très proche du style littéraire (ou philosophie) de l'horreur cosmique ou cosmicisme, crée par l'auteur <i>H.P. Lovecraft</i>.</article>
+                        
+                            <!--Création d'une marge à l'aide de "&nbsp"-->
+                        <article><h4 class="soustitre">J'ai</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            donc voulu de mettre de l'avant ces univers mêlants primitivisme flamand et ténébrisme voire empruntants une touche de romantisme. Puisque, comme le concept esthétique du sublime nous le fait reconnaître, le beau peut-êre transcendé par la force de l'image et ce jusqu'au point où l'on puisse parler de sublime abjection.
+                            Un sujet largement abordé dans l'oeuvre photographique de <i>Joel-Peter Witkins</i>, artiste que j'ai étudié durant mes cours d'Histoire de l'Art, qui associe poésie et morbide grâce à un assemblage baroque de corps difformes et incongrus, objets hétéroclites voire même de vrais cadavres (âmes sensibles s'abstenir!).
+                            Par ailleurs, mon inspiration proviendra également des mythes et légendes issues de la théologie comme de la culture populaire. Ces sujets souvent abordés par les artistes de maintes périodes historiques, qui ne cessent d'inspirer l'angoisse comme l'allégresse, la beauté comme la laideur.</article>
+                    </div>
+                </section>
+
+                <!--Section pour les vidéos-->
+                <section>
+                    <h2 id="video">Vidéos</h2>
+                        <div  class="youtube">
+                            <figure>
+                                <iframe src="https://www.youtube.com/embed/K_03kFqWfqs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <span>Elden Ring: Story Trailer</span>
+                            </figure>
+
+                            <figure>
+                                <iframe src="https://www.youtube.com/embed/vqnQL_dz1is" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <span>The Flatliners- Birds of England (Official Video)</span>
+                            </figure>
+
+                            <figure>
+                                <iframe src="https://www.youtube.com/embed/MGzDbSGQk8Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <span>Shawn James- The Curse of the Fold</span>
+                            </figure>
+
+                            <figure>
+                                <iframe src="https://www.youtube.com/embed/w3rQ3328Tok" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <span>Top Gun with a cat</span>
+                            </figure>
+                        </div>
+                </section>
+
+                <!--Section de la galerie d'images-->
+                <section id="galerie">
+                    <h2 id="images">Galerie d'images</h2>
+                        <div class="rangee">
+
+                            <!--Classement des images par sections: Section 1-->
+                            <div class="colonne_no1">
+                                <img src="images/judith.jpg" alt="Judith, Le Caravage">
+                                <span>Le Caravage- Judith</span>               
+
+                                <img src="images/laTourDeBabel.jpg" alt="La Tour de Babel, Brueghel L'ancien">
+                                <span>Brueghel L'ancien- La Tour de Babel</span>
+                            </div>
+
+                            <!--Classement des images par sections: Section 2-->
+                            <div class="colonne_no2">
+                                <img src="images/radeauDeLaMéduse.jpg" alt="Le radeau de la Méduse, Géricault">
+                                <span>Géricault- Le Radeau de la Méduse</span>
+
+                                <img src="images/leCauchemard-JohannHeinrichFussli.jpg" alt="Le cauchemard, Johan Heinrich Fussli">
+                                <span>Johan Heinrich Fussli- Le Cauchemard</span>
+                            </div>
+
+                            <!--Classement des images par sections: Section 3-->
+                            <div class="colonne_no3">
+                                <img src="images/tumblr_mowkrxZHpO1sv1bago1_500.jpg" alt="Red Fox, Lauren Marx">
+                                <span>Lauren Marx- Red Fox</span>
+
+                                <img src="images/laMortDeMarat.jpg" alt="La Mort de Marat, David">
+                                <span>David- La Mort de Marat</span>
+                            </div>
+
+                            <!--Classement des images par sections: Section 4-->
+                            <div class="colonne_no4">
+                                <img src="images/tumblr_mx99jlQ3vQ1rnrss4o1_500.jpg" alt="Serpents Unleashed, John Baizley">
+                                <span>John Baizley- Serpents Unleashed</span>
+
+                                <img src="images/guernica.jpg" alt="Guernica, Picasso">
+                                <span>Picasso- Guernica</span>
+                            </div>
+
+                             <!--Classement des images par sections: Section 5-->
+                            <div class="colonne_no5">
+                                <img src="images/Escher_Implosion_spiral_toroid.jpg" alt="spiral toroid, Escher">
+                                <span>Escher- spiral toroid</span>
+
+                                <img src="images/laMadelainePenitente.jpg" alt="Madelaine Pénitente, George De La Tour">
+                                <span>George De La Tour- Madelaine Pénitente</span>
+                            </div>
+                        </div>
+                </section>
+
+            <!--Pied de page-->
+            
+            <footer id="piedDePage">
+                    <h4>Liens importants:</h4>
+                    <!--Profils Behance et Github-->
+                    <p><a href="https://www.behance.net/xavierarbour1">Mon comte Behance</a></p>
+                    <p><a href="https://github.com/IshtarFolo">Mon compte Github</a></p>
+
+                    <!--Infos importantes relatives au collège et au programme ainsi que notice de confidentialité-->
+                    <p>Collège de Maisonneuve, 3800 R. Sherbrooke E, Montréal, QC, H1X 2A2</p>
+                    <p>TIM - Technique d'intégration Multimédias</p>
+                    <p>Avis de confidentialité | Privacy Notice</p>
+
+                    <!--Icônes médias sociaux-->
+                    <div class="icones">
+                        <p>
+                            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                <img style="border:0;width:88px;height:31px"
+                                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                    alt="CSS Valide !">
+                                </a>
+                            </p>
+                        <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" class="facebook" alt="icone">
+                        <img src="https://s2.svgbox.net/social.svg?ic=behance&color=000" class="behance" alt="icone">
+                        <img src="https://s2.svgbox.net/social.svg?ic=github&color=000" class="github" alt="icone">
+                        <img src="https://s2.svgbox.net/social.svg?ic=reddit&color=000" class="reddit" alt="icone">
+                    </div>
+            </footer>
+
+    </body>
+
+</html>
